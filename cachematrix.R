@@ -1,7 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Alters a matrix object to create a list of the four caching functions
+## Alters a matrix object to create a 'cache matrix' -- a list of the four caching functions
 
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL
@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Checks a matrix for a cached solution; if present, return it. If not, compute it, cache it and return it
+## Checks a 'cache matrix' for cached solutions. If one is present, return it, otherwise compute it, cache it and return it.
 
 cacheSolve <- function(x, ...) {
   inverse <- x$getinverse()
